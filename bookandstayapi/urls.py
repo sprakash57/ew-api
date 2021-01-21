@@ -19,5 +19,5 @@ from customer import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('create/', views.CreateDetails, name='create')
+    path('api/customers/', include('customer.urls'))
 ]
