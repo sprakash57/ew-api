@@ -11,7 +11,10 @@ from .models import Details
 
 
 @api_view(["GET"])
-def getDetails(request):
+def get_details(request):
+    """
+    API to register new customers
+    """
     customers = Details.objects.all()
     serializer = DetailsSerializer(customers, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
