@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ewapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'book-and-stay',
+        'NAME': 'plan-event',
         'USER': 'postgres',
         'PASSWORD': 'Welcome1',
         'HOST': '127.0.0.1',
