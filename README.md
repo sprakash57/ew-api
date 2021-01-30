@@ -9,36 +9,36 @@ This repo contains all the services being used by ew-ui. `ew-api` is built using
 
 ## Setup Local environment
 
-1. Create virtual environment \
+1. Create virtual environment
 
-`python3 -m venv <your environment name>`
+    `python3 -m venv <your environment name>`
 
 2. `cd` into your virtual environment which you just created and run below command -
 
-`source env\Scripts\activate`
+    `source env\Scripts\activate`
 
-2. Install `Django` and `Django REST framework` into the virtual environment.
+3. Install `Django` and `Django REST framework` into the virtual environment.
 
-```
-pip install django
+    ```
+    pip install django
 
-pip install djangorestframework
-```
+    pip install djangorestframework
+    ```
 
-3. Local Database setup
+4. Local Database setup
 
-Follow the tutorial below to set up the postgres on your machine. \
+Follow the tutorial below to set up the postgres on your machine.
 
-> https://www.postgresqltutorial.com/install-postgresql/
+> https://www.postgresqltutorial.com/install-postgresql
 
 ## Configure PEP8 and Pylint
 
-1. If you are using VScode for development you should install `Python` extension developed by Microsoft.
+1. If you are using VS Code for development you should install `Python` extension developed by Microsoft.
 2. Add below configuration to your user settings JSON file.
 
 ```
-"python.formatting.autopep8Path": "C:\\Code repos\\python\\environments\\bookandstay_env\\Scripts\\autopep8",
-"python.linting.pylintPath": "C:\\Code repos\\python\\environments\\bookandstay_env\\Scripts\\pylint",
+"python.formatting.autopep8Path": "<Path to your virtual environment directory>\\Scripts\\autopep8",
+"python.linting.pylintPath": "<Path to your virtual environment directory>\\Scripts\\pylint",
 "python.linting.pylintArgs": [
     "--load-plugins=pylint_django",
     "--disable=django-not-configured",
